@@ -92,7 +92,7 @@ if (list.size() > 0) {
 ```
 
 ### SDK API Key 
-In order to use the SDK, the developer needs an Unique Account Id (UUID) and an API Key. The same can be obtained by contacting us at [here](mailto:blogtech90@gmail.com). However for evaluation purpose there is an API key available in the [sample project]. Please download the project and open in Android Studio to run the App. Please note, the given demo key wouldn't work in any other App.
+In order to use the SDK, the developer needs an Unique Account Id (UUID) and an API Key. The same can be obtained by contacting us at [here](mailto:blogtech90@gmail.com). However for evaluation purpose there is an API key available in the sample project. Download the project and open in Android Studio to run the App. Please note, the given demo key wouldn't work in any other App. The sample project contains test apps both in Java and Kotlin. 
 
 ### SDK Initialization
 The SDK can be integrated in Kotlin or Java based Android Apps. Once you get the API key and UUID, use the below code to initialize the App. 
@@ -232,6 +232,5 @@ Toast.makeText(MainActivity.this, "PDF save at " + outputFile, Toast.LENGTH_LONG
 
 `setWaterMarkText`- Text to display as custom water mark text
 
-
-
-For a working demo, please dowload or checkout the sample github project.
+### Support
+For any issue of the SDK please [write to us](mailto:blogtech90@gmail.com). Or you can create a github issue [here](https://github.com/bharatTV101/MobScannerSDK/issues)
