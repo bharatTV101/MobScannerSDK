@@ -44,7 +44,7 @@ We will explain the usage of the SDK in the following section.
 The SDK can be dowloaded from maven using gradle. Add below line inside app module gradle file dependency section
 
 ```
-implementation 'com.mobspace.mobscanner:docscannerlib:1.0.0-beta' // or latest version
+implementation 'com.mobspace.mobscanner:docscannerlib:0.1.10-beta' // or latest version
 ```
 
 Also, add below lines in the project level gradle file
@@ -149,13 +149,15 @@ fromCamera(Activity activity, int requestCode, CameraConfig cameraConfig)
 ### Camera Config
 You can pass your own request code to handle inside onActivityResult callback. Additionally you can pass `CameraConfig` object to controll different camera UI options.
 
-```
-CameraConfig config = new CameraConfig()
+`setShowGrid`- Flag to show a 3x3 grid on the camera preview. Default value `true`
 
-config.set
+`setEnableZoom`- Flag to enable/disable pinch zoom. Default value `true`
 
+`setExposureCorrection`- Flag to enble/disable exposure correction on vertical scroll up/down on the image preview. Default value `true`
 
-```
+`setShowCapturePreview` - Flag to enable/disable capture preview once an image has been captured. Default value `false`
+
+`setSingleImageMode` - Flag to capture only one image (single shot). Default value `false`
 
 ### Using Gallery
 You can request the SDK to load Gallery images using-
@@ -218,8 +220,14 @@ Toast.makeText(MainActivity.this, "PDF save at " + outputFile, Toast.LENGTH_LONG
 
 `PDFConfig` class provides options to customize the generated PDF
 
-`pdfConfig.`- To set the quality of the output images. Being 0 as min and 100 as max value. Default value set to 90
-``- Flag to apply margin to the PDF pages
-``- PageSize of the PDF. A4 is the default size. Supported sizes are- A3,A4,A5,Letter,PostCard,Legal
-``- Flag to set enable water mark on the left bottom position of the PDF page.
-``- Text to display as custom water mark text
+`setQuality`- To set the quality of the output images. Being 0 as min and 100 as max value. Default value set to 90
+
+`setApplyAutoMargin`- Set flag to apply margin to the PDF pages
+
+`setPageSize`- PageSize of the PDF. A4 is the default size. Supported sizes are- A3,A4,A5,Letter,PostCard,Legal
+
+`setWaterMarkEnabled`- Flag to set enable water mark on the left bottom position of the PDF page.
+
+`setWaterMarkText`- Text to display as custom water mark text
+
+
