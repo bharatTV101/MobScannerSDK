@@ -1,0 +1,3 @@
+include ':samplemobscannersdkjava'
+include ':app'
+rootProject.name = "SampleAppMobScannerSDK"
