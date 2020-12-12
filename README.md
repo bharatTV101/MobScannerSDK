@@ -92,13 +92,13 @@ if (list.size() > 0) {
 ```
 
 ### SDK API Key 
-In order to use the SDK, the developer needs an Unique Account Id (UUID) and an API Key. The same can be obtained by contacting us at [here](mailto:blogtech90@gmail.com). However for evaluation purpose there is an API key available in the sample project. Download the project and open in Android Studio to run the App. Please note, the given demo key wouldn't work in any other App. The sample project contains test apps both in Java and Kotlin. 
+In order to use the SDK, the developer needs an Unique Account Id (UUID) and an API Key. The same can be obtained by [contacting us](mailto:blogtech90@gmail.com). However for evaluation purpose there is an API key available in the sample project. Download the project and open in Android Studio to run the App. Please note, the given demo key wouldn't work in any other App. The sample project contains test apps both in Java and Kotlin. 
 
 ### SDK Initialization
 The SDK can be integrated in Kotlin or Java based Android Apps. Once you get the API key and UUID, use the below code to initialize the App. 
 
 ```
-MobScannerSDK.init(YOUR_API_KEY, YOUR_UUID, this, new ISdkInitCallback() {
+MobScannerSDK.init(YOUR_API_KEY, YOUR_UUID, getApplicationContext(), new ISdkInitCallback() {
        @Override
        public void onInitSuccess() {
                 Toast.makeText(getApplicationContext(), "Init Status", Toast.LENGTH_SHORT).show();      
@@ -134,7 +134,6 @@ Set the Theme using
 MobScannerSDK.setTheme(R.style.MsScannerTheme);
 ```
 
-
 ### Using Camera
 Before using Camera or Gallery, make sure that your App has necessary permissions as described above. 
 
@@ -144,7 +143,7 @@ InputImagePicker.fromCamera(Activity activity);
 ```
 or
 ```
-fromCamera(Activity activity, int requestCode, CameraConfig cameraConfig)
+InputImagePicker.fromCamera(Activity activity, int requestCode, CameraConfig cameraConfig)
 ```
 You can pass your own request code to handle inside onActivityResult callback. Additionally you can pass `CameraConfig` object to controll different camera UI options.
 
@@ -212,7 +211,7 @@ if(!dir.exists())
 
  builder.build().create();
 ```
-### Generate PDFs
+### Generating PDF
 By default the SDK would store images as JPEG in phone's persistent storage. You can use inbuilt PDF generator to create PDF from images.
 ```
 // jpegList the list of JPEG images
