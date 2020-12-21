@@ -92,7 +92,7 @@ if (list.size() > 0) {
 ```
 
 ### SDK API Key 
-In order to use the SDK, the developer needs an Unique Account Id (UUID) and an API Key. The same can be obtained by [contacting us](mailto:blogtech90@gmail.com). However, for evaluation purpose there is an API key available in the sample project. Download the project and open in Android Studio to run the App. Please note, the given demo key wouldn't work in any other App. The sample project contains test apps both in Java and Kotlin. 
+In order to use the SDK, the developer needs an Unique Account Id (UUID) and an API Key. The UUID defines an unique ID for a vendor/bussiness, while API Key is specific to an App owned by the Vendor and it is unique to the "App Package Id". The same can be obtained by [contacting us](mailto:blogtech90@gmail.com). However, for evaluation purpose there is an API key/UUID available in the sample project. Download the project and open in Android Studio to run the App. Please note, the given demo key wouldn't work in any other App. The sample project contains test apps both in Java and Kotlin. 
 
 ### SDK Initialization
 The SDK can be integrated in Kotlin or Java based Android Apps. Once you get the API key and UUID, use the below code to initialize the App. 
