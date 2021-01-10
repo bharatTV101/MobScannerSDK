@@ -1,6 +1,6 @@
 # MobScannerSDK for Android
 The Mobscanner App (Available for Android at https://play.google.com/store/apps/details?id=com.mera.doc.scanner), designed to perform faster image scanning and produce quality PDFs with few clicks. The App aims to bring best quality images by removing shadows and any other noise from the input image. 
-The heart of the App, the MobScanner SDK provides out of the box accurate, fast, and reliable mobile document scanning SDK for Android. Use any smart device to quickly and accurately digitize the documents you need. Implement the Ready-To-Use UI (RTU UI) with only a few lines of code cuts down the development cost and time for the business. 
+The heart of the App, the MobScanner SDK provides out of the box accurate, fast, and reliable mobile document scanning SDK for Android and [IOS](https://github.com/mobspace/MobScannerSDK-IOS). Use any smart device to quickly and accurately digitize the documents you need. Implement the Ready-To-Use UI (RTU UI) with only a few lines of code cuts down the development cost and time for the business. 
 
 ## Requirements
 Operating System
