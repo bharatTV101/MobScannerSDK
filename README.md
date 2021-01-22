@@ -44,7 +44,7 @@ We will explain the usage of the SDK in the following section.
 The SDK can be downloaded from maven using gradle. Add below line inside app module gradle file dependency section
 
 ```
-implementation 'com.mobspace.mobscanner:docscannerlib:0.1.14-beta' // or latest version
+implementation 'com.mobspace.mobscanner:docscannerlib:0.1.18-beta' // or latest version
 ```
 
 Also, add below lines in the project level gradle file
