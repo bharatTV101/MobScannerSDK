@@ -55,7 +55,7 @@ allprojects {
         google()
         jcenter()
         maven {
-            url 'https://dl.bintray.com/blogtech90/MobScannerSDK/'
+            url 'https://mobspace.jfrog.io/artifactory/MobScannerSDK/'
         }
         maven { url 'https://jitpack.io' }
     }
